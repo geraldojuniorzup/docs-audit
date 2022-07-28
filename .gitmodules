@@ -1,0 +1,3 @@
+[submodule "docs-audit"]
+	path = docs-audit
+	url = https://github.com/geraldojuniorzup/docs-audit.git

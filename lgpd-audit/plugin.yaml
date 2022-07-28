@@ -1,0 +1,20 @@
+name: lgpd-audit
+description: Plugin para auditoria de lgpd
+display-name: lgpd-audit
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+compatibility:
+  - java
+  - spring
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
+  - "Api"
+types:
+  - app
+hooks:
+  - type: run-script
+    trigger: before-render
+    script: script.py
