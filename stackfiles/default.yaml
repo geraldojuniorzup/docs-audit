@@ -1,0 +1,14 @@
+type: app
+description: Default stackfile usecase description
+# template used to create the project
+template: docs-audit/<template-name>
+inputs:
+  some_input: value
+# list of plugins to be applied after project creation
+plugins:
+  - plugin: docs-audit/<plugin-name>
+    inputs:
+      some_input: value
+      some_list:
+        - item1
+        - item2
