@@ -84,15 +84,6 @@ def run(metadata: Metadata = None):
                     print("The personal data Email found in this path: " +
                         searchEmail.group())
 
-                ner_en = nlp_en(file)
-                ner_pt = nlp_pt(file)
-
-                for word in ner_en.ents:
-                    if(word.label_ == "PERSON" and (len(word.text.split()) >= 2)):
-                        count_personal += 1
-                        print("The personal data name found in this path: " +
-                            word.text)
-
                 for personal_data in personal_datas:
                     personal_data = personal_data.strip()
                     if (re.search(r'\b' + re.escape(personal_data) + r'\b', file, re.MULTILINE)):
